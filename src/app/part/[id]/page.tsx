@@ -7,9 +7,10 @@ import { Button } from '@/components/ui/button';
 import { ButtonGroup } from '@/components/ui/button-group';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Menu, BookOpen, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
+import { Menu, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function PartPage() {
   const params = useParams();
@@ -86,7 +87,13 @@ export default function PartPage() {
               <Menu className="h-5 w-5" />
             </Button>
             <Link href="/" className="flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-primary" />
+              <Image
+                src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+                alt="Understanding Faith"
+                width={32}
+                height={32}
+                className="rounded"
+              />
               <h1 className="text-lg font-semibold">Understanding Faith</h1>
             </Link>
           </div>

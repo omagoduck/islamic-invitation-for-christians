@@ -4,8 +4,9 @@ import { contentParts } from '@/lib/content';
 import { Button } from '@/components/ui/button';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { BookOpen, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -14,7 +15,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-center px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <BookOpen className="h-6 w-6 text-primary" />
+            <Image
+              src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+              alt="Understanding Faith"
+              width={32}
+              height={32}
+              className="rounded"
+            />
             <h1 className="text-lg font-semibold">Understanding Faith</h1>
           </div>
         </div>
@@ -23,21 +30,37 @@ export default function Home() {
       <main className="flex-1">
         <div className="mx-auto max-w-4xl px-4 py-12 md:px-8">
           {/* Hero Section */}
-          <div className="text-center space-y-6 mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Understanding Faith
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A calm and respectful exploration of faith, understanding, and truth. <br />
-              And a negligible invitation to Islam.
-            </p>
-            <div className="flex justify-center gap-4 pt-4">
-              <Link href="/part/part-01">
-                <Button size="lg">
-                  Start Reading
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+            {/* Image */}
+            <div className="shrink-0">
+              <Image
+                src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+                alt="Islamic and Christian symbols on book pages"
+                width={200}
+                height={200}
+                className="rounded-lg shadow-md"
+                priority
+              />
+            </div>
+
+            {/* Content */}
+            <div className="text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+                Understanding Faith
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                A calm and respectful exploration of faith, understanding, and truth.<br />
+                And a negligible invitation for to Islam. <br />
+                Only for Christians.
+              </p>
+              <div className="flex justify-center gap-4 pt-4">
+                <Link href="/part/part-01">
+                  <Button size="lg">
+                    Start Reading
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
 
