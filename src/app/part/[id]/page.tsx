@@ -86,9 +86,9 @@ export default function PartPage() {
             >
               <Menu className="h-5 w-5" />
             </Button>
-            <Link href="/" className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+                src="/logo.png"
                 alt="Understanding Faith"
                 width={32}
                 height={32}

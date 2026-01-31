@@ -16,7 +16,7 @@ export default function Home() {
         <div className="container mx-auto flex h-16 items-center justify-center px-4 md:px-8">
           <div className="flex items-center gap-2">
             <Image
-              src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+              src="/logo.png"
               alt="Understanding Faith"
               width={32}
               height={32}
@@ -34,7 +34,7 @@ export default function Home() {
             {/* Image */}
             <div className="shrink-0">
               <Image
-                src="/two-page-onepageislamic-anotherpagecristianic-symbol.png"
+                src="/logo.png"
                 alt="Islamic and Christian symbols on book pages"
                 width={200}
                 height={200}
