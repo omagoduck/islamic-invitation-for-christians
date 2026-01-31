@@ -1,4 +1,4 @@
-# Part Three: The Crucifixion — What Really Happened, and Why Islam Disagrees
+export const part03Content = `# Part Three: The Crucifixion — What Really Happened, and Why Islam Disagrees
 
 ## A Moment That Changed History
 
@@ -218,3 +218,4 @@ And it invites — never forces — people to return to the original message of 
 Worship God alone.
 Live righteously.
 Prepare for the Hereafter.
+`;

@@ -1,4 +1,4 @@
-# Part Seven: What Religion Really Is — And Why Islam Is Often Misunderstood
+export const part07Content = `# Part Seven: What Religion Really Is — And Why Islam Is Often Misunderstood
 
 ## Religion Was Never Meant to Be a Label
 
@@ -233,3 +233,4 @@ Christianity began in truth — and drifted.
 
 Islam came not to erase,
 but to restore.
+`;

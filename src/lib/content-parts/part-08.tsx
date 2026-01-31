@@ -1,4 +1,4 @@
-# Part Eight: The Final Reflection — Truth, Choice, and the Journey of the Soul
+export const part08Content = `# Part Eight: The Final Reflection — Truth, Choice, and the Journey of the Soul
 
 ## This Was Never About Winning an Argument
 
@@ -153,3 +153,4 @@ And the path to Him has always been simple:
 One God.
 One truth.
 One sincere heart.
+`;

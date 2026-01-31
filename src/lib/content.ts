@@ -1,8 +1,18 @@
+import { part01Content } from './content-parts/part-01';
+import { part02Content } from './content-parts/part-02';
+import { part03Content } from './content-parts/part-03';
+import { part04Content } from './content-parts/part-04';
+import { part05Content } from './content-parts/part-05';
+import { part06Content } from './content-parts/part-06';
+import { part07Content } from './content-parts/part-07';
+import { part08Content } from './content-parts/part-08';
+import { part09Content } from './content-parts/part-09';
+
 export interface ContentPart {
   id: string;
   title: string;
   description: string;
-  file: string;
+  content: string;
 }
 
 export const contentParts: ContentPart[] = [
@@ -10,54 +20,54 @@ export const contentParts: ContentPart[] = [
     id: "part-01",
     title: "Part One: A Conversation, Not a Confrontation",
     description: "Understanding the Islamic perspective on Jesus and the message of Islam",
-    file: "part-01.md",
+    content: part01Content,
   },
   {
     id: "part-02",
     title: "Part Two: Jesus in the Qur'an",
     description: "Who Jesus truly was according to Islamic teachings",
-    file: "part-02.md",
+    content: part02Content,
   },
   {
     id: "part-03",
     title: "Part Three: The Crucifixion",
     description: "What really happened, and why Islam disagrees",
-    file: "part-03.md",
+    content: part03Content,
   },
   {
     id: "part-04",
     title: "Part Four: The Gospel vs. The Injil",
     description: "What was lost, what remained",
-    file: "part-04.md",
+    content: part04Content,
   },
   {
     id: "part-05",
     title: "Part Five: Why Islam Feels Familiar",
     description: "To Christians who think deeply",
-    file: "part-05.md",
+    content: part05Content,
   },
   {
     id: "part-06",
     title: "Part Six: Muhammad ﷺ",
     description: "Through the lens of Jesus' teachings",
-    file: "part-06.md",
+    content: part06Content,
   },
   {
     id: "part-07",
     title: "Part Seven: What Religion Really Is",
     description: "And why Islam is often misunderstood",
-    file: "part-07.md",
+    content: part07Content,
   },
   {
     id: "part-08",
     title: "Part Eight: The Final Reflection",
     description: "Truth, choice, and the journey of the soul",
-    file: "part-08.md",
+    content: part08Content,
   },
   {
     id: "part-09",
     title: "Part Nine: For Those Who Feel Ready",
     description: "What it really means to accept Islam",
-    file: "part-09.md",
+    content: part09Content,
   },
 ];

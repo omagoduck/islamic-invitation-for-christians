@@ -1,4 +1,4 @@
-# Part Two: Jesus in the Qur'an — Who He Truly Was
+export const part02Content = `# Part Two: Jesus in the Qur'an — Who He Truly Was
 
 ## A Different Kind of Story
 
@@ -208,3 +208,4 @@ Islam restores him.
 And the invitation remains gentle, just as the Qur'an commands:
 
 > "There is no compulsion in religion." (2:256)
+`;

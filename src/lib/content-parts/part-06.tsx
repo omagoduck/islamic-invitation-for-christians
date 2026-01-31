@@ -1,4 +1,4 @@
-# Part Six: Muhammad ﷺ Through the Lens of Jesus' Teachings
+export const part06Content = `# Part Six: Muhammad ﷺ Through the Lens of Jesus' Teachings
 
 ## A Question Many Christians Quietly Ask
 
@@ -184,3 +184,4 @@ It asks you to recognize:
 
 And to see Muhammad not as a rival —
 but as the final voice in the same divine call.
+`;

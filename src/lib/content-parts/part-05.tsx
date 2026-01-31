@@ -1,4 +1,4 @@
-# Part Five: Why Islam Feels Familiar to Christians Who Think Deeply
+export const part05Content = `# Part Five: Why Islam Feels Familiar to Christians Who Think Deeply
 
 ## A Strange Feeling Many Christians Experience
 
@@ -206,3 +206,4 @@ If the Quran preserves the message…
 Then Islam is not foreign.
 
 It is familiar.
+`;

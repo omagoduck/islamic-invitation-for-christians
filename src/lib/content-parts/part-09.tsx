@@ -1,4 +1,4 @@
-# Part Nine: For Those Who Feel Ready — What It Really Means to Accept Islam
+export const part09Content = `# Part Nine: For Those Who Feel Ready — What It Really Means to Accept Islam
 
 ## First, Something Very Important
 
@@ -178,3 +178,4 @@ God already knows you.
 God is already near.
 
 And the door is always open.
+`;

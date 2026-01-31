@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Response } from '@/components/markdown-renderer';
 import { contentParts } from '@/lib/content';
 import { Button } from '@/components/ui/button';
 import { ButtonGroup } from '@/components/ui/button-group';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Menu, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
+import { Menu, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -17,35 +17,9 @@ export default function PartPage() {
   const router = useRouter();
   const partId = params.id as string;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [content, setContent] = useState<string>('');
-  const [loading, setLoading] = useState(true);
 
   const currentIndex = contentParts.findIndex(p => p.id === partId);
   const currentContent = contentParts.find(p => p.id === partId);
-
-  useEffect(() => {
-    if (partId) {
-      loadContent(partId);
-    }
-  }, [partId]);
-
-  const loadContent = async (id: string) => {
-    setLoading(true);
-    try {
-      const part = contentParts.find(p => p.id === id);
-      if (part) {
-        const response = await fetch(`/content/${part.file}`);
-        if (response.ok) {
-          const text = await response.text();
-          setContent(text);
-        }
-      }
-    } catch (error) {
-      console.error('Error loading content:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleNext = () => {
     if (currentIndex < contentParts.length - 1) {
@@ -181,15 +155,9 @@ export default function PartPage() {
                   <CardDescription>{currentContent.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  {loading ? (
-                    <div className="flex items-center justify-center py-12">
-                      <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
-                    </div>
-                  ) : (
-                    <div className="prose prose-slate max-w-none dark:prose-invert">
-                      <Response>{content}</Response>
-                    </div>
-                  )}
+                  <div className="prose prose-slate max-w-none dark:prose-invert">
+                    <Response>{currentContent.content}</Response>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -201,7 +169,7 @@ export default function PartPage() {
                   disabled={currentIndex <= 0}
                 >
                   <ChevronLeft className="mr-2 h-4 w-4" />
-                  Previous Part
+                  Previous
                 </Button>
                 <span className="text-sm text-muted-foreground">
                   Part {currentIndex + 1} of {contentParts.length}
@@ -211,7 +179,7 @@ export default function PartPage() {
                   onClick={handleNext}
                   disabled={currentIndex >= contentParts.length - 1}
                 >
-                  Next Part
+                  Next
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>

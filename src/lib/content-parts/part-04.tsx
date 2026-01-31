@@ -1,4 +1,4 @@
-# Part Four: The Gospel vs. The Injil — What Was Lost, What Remained
+export const part04Content = `# Part Four: The Gospel vs. The Injil — What Was Lost, What Remained
 
 ## A Very Important Clarification
 
@@ -237,3 +237,4 @@ The Quran is its protection.
 And the message has always been the same:
 
 One God. One path. One truth.
+`;

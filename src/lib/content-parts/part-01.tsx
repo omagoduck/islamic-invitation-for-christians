@@ -1,4 +1,4 @@
-# Part One: A Conversation, Not a Confrontation
+export const part01Content = `# Part One: A Conversation, Not a Confrontation
 
 This message is not written to attack you.
 It is not written to insult your faith.
@@ -234,3 +234,4 @@ Then Islam is not your enemy.
 It is your home.
 
 And the door is always open.
+`;
