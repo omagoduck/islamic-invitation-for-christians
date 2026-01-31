@@ -1,17 +1,13 @@
-import { contentParts } from './content';
-
-export async function getContent(partId: string): Promise<string> {
-  const part = contentParts.find(p => p.id === partId);
-  if (!part) return '';
-
-  try {
-    const response = await fetch(`/content/${part.file}`);
-    if (!response.ok) return '';
-    return await response.text();
-  } catch (error) {
-    console.error('Error loading content:', error);
-    return '';
-  }
-}
-
-export { contentParts };
+/**
+ * This file is reserved for future runtime dynamic loading of content.
+ * 
+ * Currently, all content is loaded statically at once from @/lib/content.
+ * If the content grows significantly and performance becomes an issue,
+ * this file can be used to implement dynamic content loading on demand.
+ * 
+ * Potential implementation:
+ * - Fetch content files dynamically based on partId
+ * - Implement caching strategies
+ * - Add lazy loading for better performance
+ * - Support content updates without rebuild
+ */
